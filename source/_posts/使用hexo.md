@@ -2,13 +2,10 @@
 title: 使用hexo
 categories: hexo
 ---
-说明
 
 [官方文档](https://hexo.io/docs/)
 
-<!--more-->
-
-1.创建仓库StudyNote
+### 创建仓库StudyNote，在本地初始化hexo项目并关联到github仓库
 
 ```sh
 mkdir StudyNote && cd StudyNote && hexo init
@@ -21,7 +18,9 @@ git commit -m "init"
 git push --set-upstream origin master
 ```
 
-2.创建仓库 e271828182.github.io，域名前缀要与github用户名一样
+<!--more-->
+
+### 创建仓库 e271828182.github.io，域名前缀要与github用户名一样
 
 ```yaml
 deploy:
@@ -30,7 +29,7 @@ deploy:
   branch: master
 ```
 
-3.deploy
+### 项目部署到github
 
 ```sh
 npm install hexo-deployer-git --save
@@ -38,11 +37,13 @@ hexo clean
 hexo deploy
 ```
 
+### 增加主题
+
 ```sh
 git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
-config.yml
+修改config.yml
 
 ```yaml
 theme: next
@@ -52,7 +53,7 @@ language: ch
 url: https://e271828182.github.io
 ```
 
-themes/_config.yml
+修改themes/_config.yml
 
 ```yaml
 # Schemes
@@ -76,6 +77,9 @@ github_banner:
   enable: false
   permalink: https://github.com/e271828182
   title: Follow me on GitHub
+footer:
+   # Powered by Hexo & NexT
+  powered: false
 ```
 
 重新发布
@@ -85,21 +89,45 @@ hexo clean
 hexo deploy
 ```
 
-新建页面（会新建一个菜单，在themes/_config.yml的menu.categories同步添加）
+### 新建页面
+
+会新建一个菜单，在themes/_config.yml的menu.categories同步添加
 
 ```sh
 hexo new page categories
-# hexo new page hello-world
 ```
 
-相关命令
+在 categories/index.md 首行添加
+
+```markdown
+---
+title: categories
+date: 2020-11-10 17:41:36
+type: "categories"
+comments: false
+---
+```
+
+在文档首行添加 categories 可将文档分类
+
+```mark
+---
+title: 使用hexo
+categories: hexo
+---
+```
+
+### 相关命令
 
 ```sh
 hexo generate --watch
 hexo s
+# layout = post page draft
+# hexo new [layout] <title>
+hexo new page categories
 ```
 
-
+### 小知识
 
 1. 标签`<!--more-->`之后的不展示（用于首页缩略视图）
 2. post相当于一篇文档
