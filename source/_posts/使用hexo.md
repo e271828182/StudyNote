@@ -3,8 +3,6 @@ title: 使用hexo
 categories: hexo
 ---
 
-[官方文档](https://hexo.io/docs/)
-
 ### 创建仓库StudyNote，在本地初始化hexo项目并关联到github仓库
 
 ```sh
@@ -54,7 +52,8 @@ url: https://e271828182.github.io
 ```
 
 修改themes/_config.yml
-
+切换图标地址[https://fontawesome.dashgame.com/](https://fontawesome.dashgame.com/)
+[https://fa5.dashgame.com/#/图标](https://fa5.dashgame.com/#/%E5%9B%BE%E6%A0%87)
 ```yaml
 # Schemes
 # scheme: Muse
@@ -78,6 +77,15 @@ github_banner:
   permalink: https://github.com/e271828182
   title: Follow me on GitHub
 footer:
+  # Icon between year and copyright info.
+  icon:
+    # Icon name in Font Awesome. See: https://fontawesome.com/icons
+    # name: fa fa-heart
+    name: fa fa-user
+    # If you want to animate the icon, set it to true.
+    animated: false
+    # Change the color of icon, using Hex Code.
+    # color: "#ff0000"
    # Powered by Hexo & NexT
   powered: false
 ```
@@ -118,7 +126,7 @@ categories: hexo
 ```
 
 ### 相关命令
-
+[官方文档](https://hexo.io/docs/)
 ```sh
 hexo generate --watch
 hexo s
