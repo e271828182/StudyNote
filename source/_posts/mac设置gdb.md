@@ -65,8 +65,6 @@ The most reliable way is to reboot your system.
 
 A less invasive way is to and restart `taskgated` service by killing the current running taskgated process (at any time in the process, but no later than before trying to run gdb again):
 
-
-
 ```sh
 sudo killall taskgated
 ```
