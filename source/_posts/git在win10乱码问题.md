@@ -13,7 +13,7 @@ categories: git
 
     - core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。
 
-        
+      <!--more-->  
 
 - 在MsysGit中，使用git log显示提交的中文log乱码。
 
