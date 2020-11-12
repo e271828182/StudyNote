@@ -35,6 +35,6 @@ categories: git
 
         2. 为了方便使用，可以编辑 /etc/git-completion.bash ，新增一行 alias ls=“ls --show-control-chars”
 
-- 终极的解决方案是通过修改git和TortoiseGit源码实现，有网友这么做了：让Windows下Git和TortoiseGit支持中文文件名/UTF-8 ，也可以直接访问这个开源的Google项目：utf8-git-on-windows 。
+- 终极的解决方案是通过修改git和TortoiseGit源码实现，有网友这么做了：让Windows下Git和TortoiseGit支持中文文件名/UTF-8 ，也可以直接访问这个开源的Google项目：utf8-git-on-windows  。
 
 - 如果不抗拒命令行的话，直接用Cygwin来提交Git库。因为Cygwin其实是一个在Windows平台上的模拟器，它完全模拟GNU/Linux的方式运行，所以Cygwin中的Git是采用UTF-8编码来保存中文的。
