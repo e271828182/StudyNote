@@ -27,8 +27,6 @@ categories: git
 
     4. 使得 git log 可以正常显示中文（配合i18n.logoutputencoding = gbk)，在 /etc/profile 中添加：`export LESSCHARSET=utf-8`
 
-        
-
 - 在MsysGit自带的bash中，使用ls命令查看中文文件名乱码。cygwin没有这个问题。
 
     - 解决方案：
