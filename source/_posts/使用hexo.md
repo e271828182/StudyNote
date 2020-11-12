@@ -1,6 +1,7 @@
 ---
 title: 使用hexo
 categories: hexo
+tags: hexo
 ---
 
 ### 创建仓库StudyNote，在本地初始化hexo项目并关联到github仓库
