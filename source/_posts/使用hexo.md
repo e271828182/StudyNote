@@ -8,22 +8,17 @@ categories: hexo
 ```sh
 mkdir StudyNote && cd StudyNote && hexo init
 git init
-git remote add origin https://github.com/e271828182/StudyNote
-git config user.name e271828182
-git config user.email e2.718@live.com
-git add .
-git commit -m "init"
-git push --set-upstream origin master
+# 关联到远程仓库略
 ```
 
 <!--more-->
 
-### 创建仓库 e271828182.github.io，域名前缀要与github用户名一样
+### 创建仓库 shumin0.github.io，域名前缀要与github用户名一样
 
 ```yaml
 deploy:
   type: git
-  repo: https://github.com/e271828182/e271828182.github.io
+  repo: https://github.com/shumin0/shumin0.github.io
   branch: master
 ```
 
@@ -46,9 +41,9 @@ git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```yaml
 theme: next
 title: 学习记录
-author: e271828182
+author: shumin0
 language: ch
-url: https://e271828182.github.io
+url: https://shumin0.github.io
 ```
 
 修改themes/_config.yml
@@ -71,10 +66,10 @@ sidebar:
   # position: left
   position: right
 social:
-  GitHub: https://github.com/e271828182 || fab fa-github
+  GitHub: https://github.com/shumin0 || fab fa-github
 github_banner:
   enable: false
-  permalink: https://github.com/e271828182
+  permalink: https://github.com/shumin0
   title: Follow me on GitHub
 footer:
   # Icon between year and copyright info.

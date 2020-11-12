@@ -7,13 +7,13 @@ title: 学习记录
 subtitle: ''
 description: ''
 keywords:
-author: e271828182
+author: shumin0
 language: ch
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://e271828182.github.io
+url: https://shumin0.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -106,5 +106,5 @@ theme: next
 #   type: ''
 deploy:
   type: git
-  repo: https://github.com/e271828182/e271828182.github.io
+  repo: https://github.com/shumin0/shumin0.github.io
   branch: master
