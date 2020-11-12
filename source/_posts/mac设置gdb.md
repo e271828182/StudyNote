@@ -11,6 +11,8 @@ categories: mac
 brew install gdb
 ```
 
+<!--more-->
+
 ### 设置权限
 
 参考[官方文档](https://sourceware.org/gdb/wiki/PermissionsDarwin)
