@@ -1,4 +1,15 @@
-在集合元素遍历期间，删除元素要注意（在java中可以用Iterator来删除），因遍历过程中下标时增长的，删除后list变短，元素位置会左移，导致部分元素遍历时遗漏处理的情况（<span style="color:red">但是不会抛出异常</span>）
+---
+title: python遍历时删除元素
+date: 2020-11-18 14:41:05
+tags: python
+categories: python
+---
+
+在集合元素遍历期间，删除元素要注意（在java中可以用Iterator来删除）
+
+<!--more-->
+
+因遍历过程中下标时增长的，删除后list变短，元素位置会左移，导致部分元素遍历时遗漏处理的情况（<span style="color:red">但是不会抛出异常</span>）
 
 解决方案有三个
 
